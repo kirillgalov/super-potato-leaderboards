@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameServer", "GameServer\GameServer.csproj", "{A37724C9-AF81-427B-BE80-AD4783223299}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D812AD06-4662-496A-9268-1FC2989432AA}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaderboardsWorker", "LeaderboardsWorker\LeaderboardsWorker.csproj", "{58472D12-27F0-4F02-9A38-8A9578AE3068}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{990BC42C-38BE-4509-992F-8D089113C230}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDataAccess", "MongoDataAccess\MongoDataAccess.csproj", "{FC6F3B0E-E0D5-4746-B80D-68D2BCB4E3F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQAccess", "RabbitMQAccess\RabbitMQAccess.csproj", "{6D681642-AEDC-4BEC-A305-A03B903CB928}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A37724C9-AF81-427B-BE80-AD4783223299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A37724C9-AF81-427B-BE80-AD4783223299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A37724C9-AF81-427B-BE80-AD4783223299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A37724C9-AF81-427B-BE80-AD4783223299}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58472D12-27F0-4F02-9A38-8A9578AE3068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58472D12-27F0-4F02-9A38-8A9578AE3068}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58472D12-27F0-4F02-9A38-8A9578AE3068}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58472D12-27F0-4F02-9A38-8A9578AE3068}.Release|Any CPU.Build.0 = Release|Any CPU
+		{990BC42C-38BE-4509-992F-8D089113C230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{990BC42C-38BE-4509-992F-8D089113C230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{990BC42C-38BE-4509-992F-8D089113C230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{990BC42C-38BE-4509-992F-8D089113C230}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC6F3B0E-E0D5-4746-B80D-68D2BCB4E3F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC6F3B0E-E0D5-4746-B80D-68D2BCB4E3F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC6F3B0E-E0D5-4746-B80D-68D2BCB4E3F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC6F3B0E-E0D5-4746-B80D-68D2BCB4E3F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D681642-AEDC-4BEC-A305-A03B903CB928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D681642-AEDC-4BEC-A305-A03B903CB928}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D681642-AEDC-4BEC-A305-A03B903CB928}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D681642-AEDC-4BEC-A305-A03B903CB928}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

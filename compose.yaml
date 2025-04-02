@@ -1,0 +1,44 @@
+﻿
+
+services:
+
+  game-server:
+    image: game-server
+    build:
+      context: .
+      dockerfile: GameServer/Dockerfile
+    environment:
+      RabbitMQ__HostName: rabbitmq
+    depends_on:
+      - rabbitmq
+
+  leaderboards-worker:
+    image: leaderboards-worker
+    build:
+      context: .
+      dockerfile: LeaderboardsWorker/Dockerfile
+    depends_on:
+      - mongodb
+      - rabbitmq
+    ports:
+      - "8080:8080"
+    environment:
+      WorkerSettings__IntervalMs: 5000
+      ConnectionStrings__MongoDb: "mongodb://admin:password@mongodb:27017/?authSource=admin"
+      RabbitMQ__HostName: rabbitmq
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password
+
+  rabbitmq:
+    image: rabbitmq:4.0.7-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+

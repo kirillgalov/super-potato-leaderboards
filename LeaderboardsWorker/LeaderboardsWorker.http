@@ -1,0 +1,6 @@
+@LeaderboardsWorker_HostAddress = http://localhost:5105
+
+GET {{LeaderboardsWorker_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
